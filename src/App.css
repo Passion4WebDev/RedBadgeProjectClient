@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
-}
+@import "react-alice-carousel/lib/alice-carousel.css";
+ 
+@keyframes shake {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ .sliderimg{
+  width: 100%;
+  height: 950px;
+  object-fit: cover;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .container {
+   min-width:100%;
+   color: navy;
+   padding-top: 10px;
+   padding-bottom: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .mainTitle{
+    font-family: "Main Title Font";
   }
-}
+ 
+ .display-1 {
+   font-family: "Exotic Super CarsXXXX";
+   color: navy;
+   font-size: 90px;
+   border: 5px solid navy;
+   color: navy;
+ }
+   
+ .registerMain, .loginMain {
+   font-family: "Rating Font";
+   font-size: 40px;
+ }
+ 
+ .subtitleMain {
+   font-size: 38px;
+   font-weight: 800;
+ }
+ 
+ .authButton {
+   font-family: "Rating Font";
+   font-size: 25px;
+ }
+ 
+ .authButton:hover {
+   font-size: 25px;
+   border: 2px solid navy;
+   animation: shake 0.7s;
+ }
+ 
+ body{
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+ }
+ 
+
+ .footer {
+   margin-top: 1rem;
+   color: whitesmoke;
+   text-align: center;
+   background-position: center;
+   padding: 5px;
+   background-color: navy;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-blend-mode: normal;
+ }
+ 
+ .footerBackground {
+   background-image: url('./assets/ferrari 812-2.jpg');
+   background-repeat: repeat;
+   background-size:  150px;
+   height: 50px;
+   width: 50px;
+   background-blend-mode: multiply;
+   margin-top: 1rem;
+   background-position: center;
+   padding: 50px;
+   background-color: navy;
+   width: 100%;
+   background-blend-mode: normal;
+ }
+ 
+ .popover {
+   margin-left: 5px;
+   border: 1px solid navy;
+ }
+ 
+ .mainTitle {
+   font-family: "Main Title Font";
+   margin-left: 10px;
+   font-size: 55px;
+   color: navy;
+ }
+ 
+ .logoutButton {
+   font-family: "Rating Font";
+   font-size: 20px;
+ }
+ 
+ .logoutButton:hover {
+   border: 2px solid navy;
+   animation: shake 0.7s;
+ }
+ 
+ [class^="hvr-"] {
+   cursor: pointer;
+   text-decoration: none;
+   animation: shake 0.7s;
+ }
+ 
+ .hvr-sweep-to-right {
+   display: inline-block;
+   margin: 32px;
+   padding: 10px;
+   background: navy;
+   color: navy;
+ 
+ }
+ .hvr-sweep-to-right:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: white;
+  }
+ 
+ .ratingCard {
+   color: navy;
+   margin: 15px;
+   border: 3px solid navy;
+ }
+ 
+ .ratingButton {
+   margin: 25px;
+ }
+ /* API Search CSS */
+ .searchBtn{
+   font-family: "Rating Font";
+   font-size: 20px;
+   margin: 10px;
+ }
+ 
+ .ratingButton {
+   font-family: "Rating Font";
+   font-size: 20px; 
+ }
+ 
+ .rButton:hover {
+   font-size: 25px;
+   border: 2px solid navy;
+ }
+ 
+ .modalHeader {
+   font-family: "Rating Font";
+ }
+ 
+ .modalBlog {
+   font-family: "Rating Font Two";
+   font-size: 55px;
+   margin: 25px 0 3px 0;
+ }
+ 
+ .updateButton {
+   font-family: "Rating Font";
+   font-size: 20px;
+   margin: 20px 0 0 0;
+ }
+ 
+ .updateButton:hover {
+   font-size: 25px;
+   border: 2px solid navy;
+   animation: shake 0.7s;
+ }
+ 
+ .noRatings {
+   font-family: "Rating Font Two";
+   font-size: 50px;
+   margin-top: 50px;
+ }
+ 
+
+ 
+ .clearBtn {
+   font-family: "Rating Font";
+   font-size: 20px;
+ }
+ 
+ .clearBtn:hover {
+   font-size: 25px;
+   border: 2px solid white;
+   animation: shake 0.7s;
+ }
+ 
+ th {
+   font-family: "Rating Font";
+   font-size: 35px;
+   color: navy;
+   background-color: white;
+   
+ }
+ 
+ .table{
+   background-color: white;
+   border: solid navy 3px;
+   color: navy;
+   font-size: 25px;
+   margin: 30px 10px;
+ }
+ 
+ tr:nth-child(odd) {
+   background-color: white;
+ }
+ .ratingCreateBlog {
+   color: orangered;
+   font-family: "RatingFont Two";
+   font-size: 30px;
+   text-decoration: underline;
+ }
+ 
+ .ratingCreateLabel {
+   margin: 15px 0 5px 0;
+   font-size: 30px;
+   color: navy;
+   font-family: "Rating Font";
+  }
+ 
