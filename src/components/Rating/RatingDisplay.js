@@ -13,7 +13,7 @@ const RatingDisplay = (props) => {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",
-        // 'Authorization': `Bearer ${props.token}`
+        'Authorization': `Bearer ${props.token}`
         
       }),
     })

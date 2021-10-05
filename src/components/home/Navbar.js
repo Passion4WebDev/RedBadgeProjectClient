@@ -64,29 +64,33 @@ const Sitebar = (props) => {
           </Container>
         </Route>
               <Route exact path="/ratings/">
-                {/* render={props => renderComponent(RatingCreate, { ...props, token: sessionToken })} */}
-                
-                <RatingDisplay token={props.token} />
-              
+                {/* render={props => renderComponent(RatingCreate, { ...props, token: sessionToken })} */}                
+              <RatingDisplay token={props.token} />
               </Route> 
 
               <Route exact path="/blog/">
                 {/* render={props => renderComponent(RatingCreate, { ...props, token: sessionToken })} */}
                 
-                <RatingDisplay token={props.token} />
+              <RatingDisplay token={props.token} />
               
               </Route>
 
               <Route exact path="/new cars/">
                                
-                <RatingDisplay token={props.token} />
+              <RatingDisplay token={props.token} />
 
               <Route exact path="/used cars/">
                                
                <RatingDisplay token={props.token} />
               
               </Route>
-              
+
+              <Route exact path="/dealers/">
+                               
+              <RatingDisplay token={props.token} />
+                              
+              </Route>
+                 
               </Route>
 
               <Route exact path="/all-ratings/">

@@ -9,7 +9,7 @@
 
  .sliderimg{
   width: 100%;
-  height: 950px;
+  height: auto;
   object-fit: cover;
   }
  .container {
@@ -17,7 +17,7 @@
    color: navy;
    padding-top: 10px;
    padding-bottom: 100px;
-  }
+   }
   .mainTitle{
     font-family: "Main Title Font";
   }
@@ -75,15 +75,14 @@
  }
  
  .footerBackground {
-   background-image: url('./assets/ferrari 812-2.jpg');
+   background-image: url('./assets/footergold-plated.jpg');
    background-repeat: repeat;
-   background-size:  150px;
-   height: 50px;
-   width: 50px;
+   background-size:  250px;
+   height: auto;
    background-blend-mode: multiply;
    margin-top: 1rem;
    background-position: center;
-   padding: 50px;
+   padding: 25px;
    background-color: navy;
    width: 100%;
    background-blend-mode: normal;
@@ -97,13 +96,14 @@
  .mainTitle {
    font-family: "Main Title Font";
    margin-left: 10px;
-   font-size: 55px;
+   font-size: 80px;
    color: navy;
+   animation: shake 0.7s;
  }
  
  .logoutButton {
    font-family: "Rating Font";
-   font-size: 20px;
+   font-size: 50px;
  }
  
  .logoutButton:hover {
@@ -154,12 +154,14 @@
  
  .ratingButton {
    font-family: "Rating Font";
-   font-size: 20px; 
+   font-size: 20px;
+   animation: shake 0.7s; 
  }
  
  .rButton:hover {
    font-size: 25px;
    border: 2px solid navy;
+   animation: shake 0.7s;
  }
  
  .modalHeader {
@@ -189,8 +191,6 @@
    font-size: 50px;
    margin-top: 50px;
  }
- 
-
  
  .clearBtn {
    font-family: "Rating Font";
